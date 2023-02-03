@@ -1,8 +1,10 @@
 body {
+    
     margin: 5px;
     border-top: 5px;
 }
 header {
+   /* width: 70%;*/
     font-size:xx-large;
     padding: 20px;
     color: white;
@@ -10,45 +12,54 @@ header {
     background-color: rgb(231, 113, 113);
 }
 main {
-    width: 99%;
-    display: inline-flex;
+
+    
     margin: 5px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 0px;
+  
 }
 
 #employee{
-    margin: 50px;
-    
-  
-    clear: both;
-    width: 15%;
+
+    margin: 20px;
     height: 380px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(217, 216, 216);
+    
 }
-.blue {
-    font-size: medium;
-    padding-left: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-
+#details{
+    background-color: rgb(217, 216, 216);
+    height: 340px;
+}
+#name, #role {
+    font-size:larger;
+    padding-left: 20px;
     color: white;
     text-align: left;
     background-color: rgb(52, 59, 245);
 
 }
-#details{
-margin: 25px;
-max-height: 600px;
-
+#name {
+    font-size: x-large;
 }
 
-#id, #email, #officeN, #github, #school{
-    
-    margin:0px;
+#role{
+margin-bottom: 20px;
+}
+
+
+
+
+p {
+    margin:0px 20px;
     padding: 15px;
     border: 1px black dotted;
     background-color: white;
 
-    width: 120px;
+
 }
  
