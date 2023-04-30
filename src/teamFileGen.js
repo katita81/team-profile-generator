@@ -130,10 +130,6 @@ function teamFileGen() {
             .then(({officeNumber}) => {
                 const emp = new Manager(name, id, email, officeNumber);
 
-                // Display new employee.
-                console.log('Adding the employee:')
-                console.log(emp);
-
                 // put that manager into the employees array
                 employees.push(emp);
 
@@ -151,10 +147,6 @@ function teamFileGen() {
                 .then(({ github }) => {
                     const emp = new Engineer(name, id, email, github);
 
-                    // Display new employee.
-                    console.log('Adding the employee:')
-                    console.log(emp);
-
                     // put that manager into the employees array
                     employees.push(emp);
 
@@ -171,10 +163,6 @@ function teamFileGen() {
             ])
                 .then(({ school }) => {
                     const emp = new Intern(name, id, email, school);
-
-                    // Display new employee.
-                    console.log('Adding the employee:')
-                    console.log(emp);
 
                     // put that manager into the employees array
                     employees.push(emp);
