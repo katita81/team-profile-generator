@@ -46,7 +46,7 @@ const generateHTML = () => {
                 <div class="blue" id="role">Engineer</div>
                 <p id="id">ID: ${employee.id}</p>
                 <p id="email">Email: <a href="mailto:${employee.email}">${employee.email}</a></p>
-                <p id="github">Github: ${employee.github}<a href="${employee.github}">${employee.github}</a></p>    
+                <p id="github">Github: <a href="${employee.github}">${employee.github}</a></p>    
             </div></div>`;
         } else if (employee.getRole() == 'Intern') {
             content = `<div id="employee" class="grid-item">
