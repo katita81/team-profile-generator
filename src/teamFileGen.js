@@ -45,8 +45,8 @@ const generateHTML = () => {
                 <div class="blue" id="name">${employee.name}</div>
                 <div class="blue" id="role">Engineer</div>
                 <p id="id">ID: ${employee.id}</p>
-                <p id="email">Email: ${employee.email}</p>
-                <p id="github">Github: ${employee.github}</p>
+                <p id="email">Email: <a href="mailto:${employee.email}">${employee.email}</a></p>
+                <p id="github">Github: ${employee.github}<a href="${employee.github}">${employee.github}</a></p>    
             </div></div>`;
         } else if (employee.getRole() == 'Intern') {
             content = `<div id="employee" class="grid-item">
@@ -54,7 +54,7 @@ const generateHTML = () => {
                 <div class="blue" id="name">${employee.name}</div>
                 <div class="blue" id="role">Intern</div>
                 <p id="id">ID: ${employee.id}</p>
-                <p id="email">Email: ${employee.email}</p>
+                <p id="email">Email: <a href="mailto:${employee.email}">${employee.email}</a></p>
                 <p id="school">School: ${employee.school}</p>
             </div></div>`;
         } else if (employee.getRole() == 'Manager') {
@@ -63,7 +63,7 @@ const generateHTML = () => {
                 <div class="blue" id="name">${employee.name}</div>
                 <div class="blue" id="role">Manager</div>
                 <p id="id">ID: ${employee.id}</p>
-                <p id="email">Email: ${employee.email}</p>
+                <p id="email">Email: <a href="mailto:${employee.email}">${employee.email}</a></p>
                 <p id="officeN">Office Number: ${employee.officeNumber}</p>
             </div></div>`;
         }
